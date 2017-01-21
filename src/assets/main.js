@@ -20,7 +20,9 @@ $(function() {
         // var button = '<a class="btn btn-primary" href=\'' + course.url + '\' targer="_blank">See course</a>'
         var $button = $("<a>", {class:'btn btn-primary', href: course.url, targer: '_blank', text: 'See course'});
 
-        $course.append($title).append($image).append($button);
+        $course.append($title)
+               .append($image)
+               .append($button);
         $('#badges').append($course);
       });
     }
